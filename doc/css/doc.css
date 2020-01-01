@@ -1,0 +1,150 @@
+h1{margin: 0px; padding: 0px;}
+body{
+	overflow-y: scroll;
+}
+
+/**
+ * 颜色选择器
+ */
+.color-blue{
+	color: #8A2BE2;
+}
+.color-red{
+	color: red;
+}
+.color-orange{
+	color: orange;
+}
+.color-purple{
+	color: purple;
+}
+
+
+
+nav{
+	padding: 15px;
+	background: whitesmoke;
+}
+nav h1{
+	animation: title 2s;
+	font-size: 36px;
+	margin-left: 10%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.subtitle{
+	animation: subTitle 2s;
+	margin-left: 15px;
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: bottom;
+}
+.record{
+	position: absolute;
+	right: 40%;
+	float: right;
+	font-size: 20px;
+	vertical-align: bottom;
+	animation: record 3s ease-out;
+	font-family: "楷体";
+}
+.show-time{
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	margin-right: 10%;
+	font-size: 16px;
+}
+.time{
+	font-family: "楷体";
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+#pop{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: lightgray;
+	animation: popStyle 2s;
+	display: none;
+	opacity: 0.8;
+}
+#popImg{
+	position: fixed;
+	display: none;
+	animation: popImgStyle 2s;
+}
+#xq{
+	font-family: "楷体";
+}
+
+.main{
+	width: 50%;
+	margin-left: 10%;
+	padding: 15px;
+	font-size: 15px;
+	line-height: 20px;
+}
+.main h1{
+	font-size: 20px;
+}
+.main p{
+	
+}
+.main table{
+	
+}
+.main td{
+	border-style: solid;
+	border-width: thin;
+	border-color: gray;
+	padding: 2px 20px;
+}
+.underline{
+	text-decoration: none;
+}
+.underline:hover{text-decoration: underline;}
+
+
+/**
+ * 动画效果
+ */
+@keyframes title{
+	from{
+		margin-left: 0%;
+		color: gray;
+	}
+	to{
+		margin-left: 10%;
+		color: black;
+	}
+}
+@keyframes subTitle{
+	from{margin-left: -25%;}
+	to{
+		transform: rotate(720deg);
+		margin-left: 15px;
+	}
+}
+@keyframes record{
+	from{
+		margin-top: 100px;
+		color: gray;
+		opacity: 0;
+	}
+	to{
+		margin-top: 0%;
+		color: black;
+		opacity: 1;
+	}
+}
+
+@keyframes popStyle{
+	from{opacity: 0;}
+	to{opacity: 0.8;}
+}
+@keyframes popImgStyle{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

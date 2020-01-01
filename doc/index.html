@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/doc.css" />
+		<script type="text/javascript" src="js/doc.js" ></script>
+		<script>
+			window.onload=function(){
+				today();
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<h1>文档行家</h1>
+			<span class="subtitle underline">doc maven</span>
+			<span title="行至终极" class="record">行至水穷处 坐看云起时</span>
+			<div class="show-time">
+				<a id="year"></a><span class="time color-purple">年</span>
+				<a id="month"></a><span class="time color-blue">月</span>
+				<a id="date"></a><span class="time color-orange">日</span>
+				<span class="time color-red">星期</span><a id="xq"></a>
+			</div>
+		</nav>
+		<div class="main">
+			<h1 class="color-blue">文档行家使用说明</h1>
+			<hr />
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;文档行家致力于对word文档，文本txt进行分类和版本控制，所以统称为文档。<br /></p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;我们平时工作或者笔记学习会产生许多文档，它们可能分布在我们系统盘的各处，也许你可以专门创建一个或者多个目录管理它们。但是针对同一份报告可能会出现多个不同的版本。</p>
+			<img style="width: 320px;" src="img/demo/docs.png" onclick="pop(this)" />
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;时间久了众多文档变得难以维护，很难在多个版本中选择，想删又不敢删。虽然市面上流行着很多文档管理工具，但是编辑效果却无法还原word操作。<br /></p>
+			<p class="underline">&nbsp;&nbsp;&nbsp;&nbsp;本人开发的这款桌面应用支持通过软件界面打开word文档，直接进行编辑保存，更多的是面向开发者思维的文档仓库存储，树形目录结构，通过类似maven构建工具的坐标定位，实现搜索和定位文档功能。</p>
+			
+			<span>软件说明</span>
+			<table cellspacing="0">
+				<tr>
+					<td>开发语言</td>
+					<td>Java swing库</td>
+				</tr>
+				<tr>
+					<td>支持jdk版本</td>
+					<td>1.8以上</td>
+				</tr>
+				<tr>
+					<td>支持平台</td>
+					<td>windows系统</td>
+				</tr>
+				<tr>
+					<td>源码特色</td>
+					<td>自定义组件，采用mvc升级版mvp架构</td>
+				</tr>
+				<tr>
+					<td>配置文件</td>
+					<td>通过简单的配置，实现不同的功能效果</td>
+				</tr>
+				<tr>
+					<td>项目维护中</td>
+					<td>后期会提供更多功能</td>
+				</tr>
+			</table>
+			
+			<br />
+			<h1 class="color-blue">软件截图</h1>
+			<br />
+			<img style="width: 320px;" src="img/demo/doc1.jpg" onclick="pop(this)" /><br />
+			<span>上传文档到仓库</span>
+			<br />
+			<br />
+			<img style="width: 320px;" src="img/demo/doc2.jpg" onclick="pop(this)" /><br />
+			<span>上传成功</span>
+			<br />
+			<br />
+			<img style="width: 320px;" src="img/demo/doc3.jpg" onclick="pop(this)" /><br />
+			<span>搜索文档 双击打开文档</span>
+			<br />
+			<br />
+			<img style="width: 320px;" src="img/demo/doc4.jpg" onclick="pop(this)" /><br />
+			<span>搜索文档 右键编辑坐标</span>
+		</div>
+		
+		<div id="pop" onclick="hidePop(this)">
+			<img id="popImg" />
+		</div>
+		
+	</body>
+</html>
